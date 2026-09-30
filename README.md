@@ -2,12 +2,15 @@
 ###############
 
 In 00_weather_data.R all weather files from 2000-2019 are loaded and the data is merged.
-Also in this file: imputation of missing data and covariate creation from 2002-2019 since we do not have population data before 2002.
+Output: 01_raw_data.R
 
-In 00_point_to_area.R we identify the districts of the states.
+Next open 00_projected_weather_data_daily.R. We downscale precipitation, temp mean/min/max and humidity mean on a grid and aggregate it to daily district-level data.
+Output: 01_district_daily_downscaled_finer_grid.RData
 
-Then change to 00_kNN.R to get meteorological data for districts without monitoring stations. Afterwards change back to 00_point_to_area.R and aggregate the point meteorological data to district data.
+In 00_district_weekly_covariates.R weekly covariates are defined based on daily district-level criteria.
+Output: 01_district_weekly_covariates_finer_grid.RData
 
-In 00_population_mortality_district_data.R all population files (mortality data) from 2002-2019 are loaded and pre-processed.
+In 01_Austrian_districts.RData you find the object of the Austrian districts with their respective mean elevation. 
 
-In 00_inla_mortality_districts.R the model is constructed and inferred.
+In 00_model_comparison.R we evaluate the best of 14 mortality models for both genders jointly, where the complexity of the models is steadily increasing.
+
