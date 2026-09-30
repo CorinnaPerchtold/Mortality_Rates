@@ -325,6 +325,5 @@ pop_districts<-rbind(pop_districts_female, pop_districts_male)
 
 data_district<-merge(pop_districts, data_district, by=c("Year", "District", "Gender", "Age"))
 
-setwd("~/Documents/Mortality & heat")
 save(data_district, file="01_mortality_data_districts_all_years.R")
 
