@@ -10,6 +10,8 @@ Output: 01_district_daily_downscaled_finer_grid.RData
 In 00_district_weekly_covariates.R weekly covariates are defined based on daily district-level criteria.
 Output: 01_district_weekly_covariates_finer_grid.RData
 
+The file 00_population_mortality_district.R gathers the population data in 01_population_districts.R and then merges with the mortality counts data, which we do not upload. 
+
 In 01_Austrian_districts.RData you find the object of the Austrian districts with their respective mean elevation. 
 
 In 00_model_comparison.R we evaluate the best of 14 mortality models for both genders jointly, where the complexity of the models is steadily increasing.
