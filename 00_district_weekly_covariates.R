@@ -156,5 +156,5 @@ district_weekly <- district_daily %>%
   ungroup()
 
 save(district_weekly, 
-     file = "01_district_weekly_covariates_finer_grid.RData")
+     file = "01_district_weekly_covariates_finer_grid_and_aggregated.RData")
 
