@@ -261,7 +261,7 @@ results_table <- results_table %>%
   arrange(WAIC)
 print(results_table)
 
-save(results_table, file = "00_model_comparison_with_fulldev_finer_grid.RData")
+save(results_table, file = "01_model_comparison_with_fulldev_finer_grid_and_aggregated.RData")
 
 # full gender deviation models are the best. Refit with config=T and safe
 fit_one <- function(form, label) {
