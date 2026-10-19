@@ -16,7 +16,7 @@ library(tidyr)
 library(dlnm)
 
 load("01_mortality_data_districts_all_years.R")
-load("03_district_weekly_covariates_finer_grid.RData")
+load("01_district_weekly_covariates_finer_grid_and_aggregated.RData")
 load("01_Austrian_districts.RData")
 
 setwd("/gpfs/scratch/perchtold/Mortality")
