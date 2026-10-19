@@ -7,7 +7,7 @@ library(lubridate)
 library(omnibus)   # longRun()
 library(magrittr)
 
-load("01_district_daily_downscaled_finer_grid.RData") 
+load("01_district_daily_downscaled_finer_grid_and_aggregated.RData") 
 
 
 # daily series should have ISO week/year keys 
