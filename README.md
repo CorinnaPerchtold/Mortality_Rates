@@ -1,7 +1,7 @@
 
 ###############
 
-In 00_weather_data.R all weather files from 2000-2019 are loaded and the data is merged.
+In 00_weather_data.R all weather files from 2000-2019 are loaded and the data is merged. The data can be downloaded from the GeoSphere datahub.
 Output: 01_raw_data.R
 
 Next open 00_projected_weather_data_daily.R. We downscale precipitation, temp mean/min/max and humidity mean on a grid and aggregate it to daily district-level data.
