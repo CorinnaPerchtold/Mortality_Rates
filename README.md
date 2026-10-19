@@ -15,4 +15,5 @@ The file 00_population_mortality_district.R gathers the population data in 01_po
 In 01_Austrian_districts.RData you find the object of the Austrian districts with their respective mean elevation. 
 
 In 00_model_comparison.R we evaluate the best of 14 mortality models for both genders jointly, where the complexity of the models is steadily increasing.
+Output: 01_model_comparison_with_fulldev_finer_grid_and_aggregated.RData.
 
